@@ -1,8 +1,19 @@
-header {
-    background-color: antiquewhite;
+* {
+    text-decoration: none;
 }
 
-#logoHeader {
-    width: 10%;
-    height: 10%;
+.navBar {
+    background-color: antiquewhite; 
+    padding: 15px 15px;
+}
+
+.navDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: inline-block;
 }
