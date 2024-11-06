@@ -2,18 +2,32 @@
     text-decoration: none;
 }
 
-.navBar {
-    background-color: antiquewhite; 
-    padding: 15px 15px;
+header {
+    overflow: hidden;
+    background-color: antiquewhite;
+    padding: 20px 10px;
 }
 
-.navDiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
 }
 
-nav ul{
-    list-style: none;
-    display: inline-block;
+nav a {
+    padding-right: 5%;
+    display: flexbox;
+    text-decoration-color: black;
+}
+
+nav a:link  {color: black;}
+nav a:visited {color: black;}
+nav a:hover {color: black;}
+nav a:active {color: black;}
+
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    padding-right: 15%;
 }
