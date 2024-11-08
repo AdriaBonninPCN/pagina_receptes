@@ -80,7 +80,7 @@
         justify-content: center;
         width: auto;
         height: 700px;
-        background-image: url(../Resources/takoyaki.png);
+        background-image: url(./Resources/takoyaki.png);
         background-repeat: no-repeat;
         background-size: cover;
         padding-left: 10px;
