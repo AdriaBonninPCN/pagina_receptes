@@ -7,7 +7,7 @@
 }
 
 .header{
-    background-color: antiquewhite;
+    background-color: #ffe8d7;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -109,7 +109,7 @@
         flex: 0 0;
         font-size: 100px;
         font-weight: 700;
-        color:aliceblue;
+        color:white;
         justify-content: left;
         margin-right: 0;
         overflow-x: hidden;
@@ -118,7 +118,7 @@
         flex: 0 0;
         font-size: 85px;
         font-weight: 300;
-        color: aliceblue;
+        color: white;
         margin-right: 0;
     }
 }
@@ -146,7 +146,7 @@
         flex: 0 0;
         font-size: 70px;
         font-weight: 700;
-        color:aliceblue;
+        color:white;
         justify-content: left;
         margin-right: 0;
         overflow-x: hidden;
@@ -155,7 +155,7 @@
         flex: 0 0;
         font-size: 60px;
         font-weight: 300;
-        color: aliceblue;
+        color: white;
         margin-right: 0;
         overflow-x: hidden;
     }
@@ -255,8 +255,8 @@
 
 .latestRecipesContent button{
     border-radius: 50px;
-    border-color: chocolate;
-    color: chocolate;
+    border-color: #ca9880;
+    color: #ca9880;
     overflow: hidden;
     width: 30%;
     height: 50px;
@@ -274,7 +274,7 @@
     margin-top: 50px;
     margin-left: 8%;
     margin-right: 8%;
-    background-color: chocolate;
+    background-color: #ca9880;
     height: auto;
     display: flex;
     align-items: center;
@@ -306,20 +306,25 @@
     width: 300px;
     height: 50px;
     background-color: transparent;
-    color: white;
+    color: #ffe8d7;
     padding-left: 5px;
-    border: 0;
+}
+
+.email .formDiv input[type=email]{
+    border: 2px solid #ffe8d7;
+    border-radius: 70px;
 }
 
 .email .formDiv input::placeholder{
-    color: white;
+    color: #ffe8d7;
 }
 
 .email .formDiv button{
     width: 150px;
     height: 50px;
-    background-color: transparent;
+    background-color: #ffe8d7;
     border-color: transparent;
+    border-radius: 70px;
     color: white;
 }
 
@@ -399,7 +404,7 @@
 }
 
 .author{
-    background-color: rgb(209, 160, 99);
+    background-color: #ddbeaa;
     border: solid black;
     border-width: 2px 0 2px 0;
     display: flex;
@@ -441,7 +446,7 @@
 }
 
 .down{
-    background-color: antiquewhite;
+    background-color: #ffe8d7;
     border: solid black;
     border-width: 0 0 2px 0;
     display: flex;
