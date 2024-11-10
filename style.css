@@ -261,6 +261,7 @@
 
 .latestRecipesContent button {
     border-radius: 50px;
+    background-color: white;
     border-color: #ca9880;
     color: #ca9880;
     overflow: hidden;
