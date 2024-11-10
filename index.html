@@ -1,117 +1,166 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>Recipe Page</title>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, intial-scale=1.0">
-        <meta name = "description" content = "This website is a web that gives information about cooking recipes"> <!--Ho posam en anglès perque la pàgina està en anglès-->
-        <meta name = "author" content = "Adrià Bonnin">
-        <meta name = "recipes" content = "index">
-        <meta property = "og:title" content = "Recipe Page">
-        <meta property = "og:description" content = "This website is a web that gives information about cooking recipes">
-        <link rel = "stylesheet" href = "style.css">
-    </head>
-    <body>
-        <header class = "header">
-            <div class = "logo">
-                <img src = "./Resources/logo.png">
+<html lang="en">
+
+<head>
+    <title>Recipe Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="description" content="This website is a web that gives information about cooking recipes">
+    <!--Ho posam en anglès perque la pàgina està en anglès-->
+    <meta name="author" content="Adrià Bonnin">
+    <meta name="recipes" content="index">
+    <meta property="og:title" content="Recipe Page">
+    <meta property="og:description" content="This website is a web that gives information about cooking recipes">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Resources/logo.png" alt = "web logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Latest recipes</a></li>
+                <li><a href="#">Most popular recipes</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="receta-destacada">
+        <div class="texto-centrado">
+            <!--agregar "snack"-->
+            <div class="titulo-destacada">
+                TAKOYAKI
+            </div>
+            <div class="texto-destacada">
+                Japanase Street Food
+            </div>
+        </div>
+    </div>
+    <div class="view-categories">
+        <ul class="categories">
+            <li id="view-category-title">View by Category:</li>
+            <li>Appetizers</li>
+            <li>Bevarages</li>
+            <li>Desserts</li>
+            <li>Healthy</li>
+        </ul>
+    </div>
+    <section class="latestRecipes">
+        <h2 class="latestRecipesTitle">Latest recipes</h2>
+        <div class="latestRecipesContent">
+            <article id="udon">
+                <a href="#udon"><img src="./Resources/udon.jpg" alt = "udon"></a>
+                <h3>Udon</h3>
+                <p class=type>Noodle</p>
+                <p class="description">
+                    This udon bowl offers thick, chewy noodles in a delicate dashi broth, rich with umami. Topped with
+                    tender tempura shrimp, fresh green onions, and a sprinkle of bonito flakes, it combines gentle
+                    warmth and texture. A hint of ginger adds brightness, creating a simple yet comforting flavor
+                    experience.
+                </p>
+                <div class=buttonDiv>
+                    <button>
+                        see recipe
+                    </button>
+                </div>
+            </article>
+            <article id="ramen">
+                <a href="#ramen"><img src="./Resources/ramen.jpg" alt = "ramen"></a>
+                <h3>Ramen</h3>
+                <p class=type>Noodle</p>
+                <p class=description>
+                    This ramen plate features a rich, savory broth with a balanced blend of soy and miso, brimming with
+                    depth. Nestled inside is a bed of perfectly cooked, springy noodles, topped with tender, marinated
+                    slices of chashu pork. Soft-boiled eggs with golden, gooey yolks sit on one side, adding a creamy
+                    texture. Fresh green onions, seaweed, and a sprinkle of sesame seeds add brightness and a hint of
+                    crunch, while a touch of spicy chili oil completes the dish with a slight kick. Each component
+                    harmonizes for a comforting and flavorful experience in every bite.
+                </p>
+                <div class=buttonDiv>
+                    <button>
+                        see recipe
+                    </button>
+                </div>
+            </article>
+        </div>
+    </section>
+    <div class=email>
+        <div class=textDiv>
+            <h2>Never miss a recipe</h2>
+            <p>Join thousands of Company subscribers and get our best recipes delivered each week!</p>
+        </div>
+        <div class=formDiv>
+            <form action="" method="POST">
+                <input type="email" name="email" placeholder="your email">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="popularRecipes">
+        <h2>Most Popular Recipes</h2>
+        <div class="recipes">
+            <article id="recipe1" class="recipe">
+                <a href="#recipe1"></a>
+                <p class=type>Noodle</p>
+                <h3>Udon</h3>
+            </article>
+            <article id="recipe2" class="recipe">
+                <a href="#recipe2"></a>
+                <p class=type>Noodle</p>
+                <h3>Ramen</h3>
+            </article>
+            <article id="recipe3" class="recipe">
+                <a href="#recipe3"></a>
+                <p class=type>Sweet</p>
+                <h3>Mochi</h3>
+            </article>
+            <article id="recipe4" class="recipe">
+                <a href="#recipe4"></a>
+                <p class=type>Sweet</p>
+                <h3>Dorayaki</h3>
+            </article>
+        </div>
+    </section>
+    <aside class="author">
+        <div class="foto">
+            <img src="./Resources/author.jpg" alt = "author picture">
+        </div>
+        <div class="texto">
+            <h4>About the Author</h4>
+            <p class="name">Adrià Bonnin</p>
+            <p class="description">Este desarrollador web y chef tiene un talento único que combina creatividad digital
+                y culinaria. Reconocido por su habilidad para transformar ideas complejas en experiencias accesibles y
+                atractivas en la web, ha ganado varios premios en ambas disciplinas, reflejando su dedicación tanto a la
+                tecnología como al arte gastronómico. A menudo, sorprende a quienes lo rodean inventando datos curiosos
+                y teorías fascinantes, lo que agrega un toque de humor y originalidad a cada conversación. Sus
+                proyectos, tanto en la cocina como en el desarrollo, destacan por su innovación, y su pasión por ambas
+                áreas lo convierte en una figura inspiradora y versátil.</p>
+        </div>
+    </aside>
+    <footer class="down">
+        <div class="divLeft">
+            <div class="logo">
+                <img src="./Resources/logo.png" alt = "web logo">
             </div>
             <nav>
-                <ul class = "nav-links">
-                    <li><a href = "#">Latest recipes</a></li>
-                    <li><a href = "#">Most popular recipes</a></li>
-                    <li><a href = "#">Categories</a></li>
+                <ul class="nav-links">
+                    <li><a href="#">Latest recipes</a></li>
+                    <li><a href="#">Most popular recipes</a></li>
+                    <li><a href="#">Categories</a></li>
                 </ul>
             </nav>
-        </header>
-        <div class = "receta-destacada">
-            <div class = "texto-centrado">
-                <!--agregar "snack"-->
-                <div class = "titulo-destacada">
-                    TAKOYAKI
-                </div>
-                <div class = "texto-destacada">
-                    Japanase Street Food
-                </div>
-            </div>
-        </div>
-        <div class = "view-categories">
-            <ul class = "categories">
-                <li id = "view-category-title">View by Category:</li>
-                <li>Appetizers</li>
-                <li>Bevarages</li>
-                <li>Desserts</li>
-                <li>Healthy</li>
-            </ul>
-        </div>
-        <section class = "latestRecipes">
-            <h2 class = "latestRecipesTitle">Latest recipes</h2>
-            <div class = "latestRecipesContent">
-                <article id = "udon">
-                    <a href="#udon"><img src="./Resources/udon.jpg"></a>
-                    <h3>Udon</h3>
-                    <p class = type>Noodle</p>
-                    <p class = "description">
-                        This udon bowl offers thick, chewy noodles in a delicate dashi broth, rich with umami. Topped with tender tempura shrimp, fresh green onions, and a sprinkle of bonito flakes, it combines gentle warmth and texture. A hint of ginger adds brightness, creating a simple yet comforting flavor experience.
-                    </p>
-                    <div class = buttonDiv>
-                        <button>
-                            see recipe
-                        </button>
-                    </div>
-                </article>
-                <article id = "ramen">
-                    <a href="#ramen"><img src="./Resources/ramen.jpg"></a>
-                    <h3>Ramen</h3>
-                    <p class = type>Noodle</p>
-                    <p class = description>
-                        This ramen plate features a rich, savory broth with a balanced blend of soy and miso, brimming with depth. Nestled inside is a bed of perfectly cooked, springy noodles, topped with tender, marinated slices of chashu pork. Soft-boiled eggs with golden, gooey yolks sit on one side, adding a creamy texture. Fresh green onions, seaweed, and a sprinkle of sesame seeds add brightness and a hint of crunch, while a touch of spicy chili oil completes the dish with a slight kick. Each component harmonizes for a comforting and flavorful experience in every bite.
-                    </p>
-                    <div class = buttonDiv>
-                        <button>
-                            see recipe
-                        </button>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <div class = email>
-            <div class = textDiv>
-                <h2>Never miss a recipe</h2>
-                <p>Join thousands of Company subscribers and get our best recipes delivered each week!</p>
-            </div>
-            <div class = formDiv>
-                <form action="" method="POST">
-                    <input type = "email" name = "email" placeholder="your email">
-                    <button type = "submit">Enviar</button>
-                </form>
-            </div>
         </div>
 
-        <section class = "popularRecipes">
-            <h2>Most Popular Recipes</h2>
-            <div class = "recipes">
-                <article id = "recipe1" class = "recipe">
-                    <a href="#recipe1"></a>
-                    <p class = type>Noodle</p>
-                    <h3>Udon</h3>
-                </article>
-                <article id = "recipe2" class = "recipe">
-                    <a href="#recipe2"></a>
-                    <p class = type>Noodle</p>
-                    <h3>Ramen</h3>
-                </article>
-                <article id = "recipe3" class = "recipe">
-                    <a href="#recipe3"></a>
-                    <p class = type>Sweet</p>
-                    <h3>Mochi</h3>
-                </article>
-                <article id = "recipe4" class = "recipe">
-                    <a href="#recipe4"></a>
-                    <p class = type>Sweet</p>
-                    <h3>Dorayaki</h3>
-                </article>
-            </div>
-        </section>
-    </body>
+        <div class="socialMedia">
+            <a herf="#"><img src="./Resources/facebook.png" alt = "facebook logo"></a>
+            <a herf="#"><img src="./Resources/instagram.png" alt = "instagram logo"></a>
+            <a herf="#"><img src="./Resources/twitter.png" alt = "twitter logo"></a>
+            <a herf="#"><img src="./Resources/youtube.png" alt = "youtube logo"></a>
+        </div>
+    </footer>
+</body>
+
 </html>

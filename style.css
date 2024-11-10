@@ -369,3 +369,123 @@
     background-size: cover;
     background-position-x: center;
 }
+
+.author{
+    background-color: rgb(209, 160, 99);
+    border: solid black;
+    border-width: 2px 0 2px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.author .foto{
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    height: 400px;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.author img{
+    width: 280px;
+    border-radius: 100%;
+}
+
+.author .texto{
+    padding: 90px;
+    width: 900px;
+}
+
+.author .texto h4{
+    font-size: 24px;
+}
+
+.author .name{
+    padding-top: 10px;
+    font-size: 45px;
+}
+
+.down{
+    background-color: antiquewhite;
+    border: solid black;
+    border-width: 0 0 2px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    flex-direction: row;
+    padding: 5px 1%;
+    margin-bottom: 20px;
+}
+
+.down .divLeft{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.down .logo{
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.down .logo img{
+    cursor: pointer;
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.down .logo img:hover{
+    transform: scale(1.1);
+}
+
+.down .nav-links{
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+.down .nav-links li{
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.down .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.down .nav-links a{
+    font-size: 18px;
+    color:black;
+    text-decoration: none;
+}
+
+.down .socialMedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.down a{
+    margin: 10px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.down a:hover{
+    transform: scale(1.1);
+}
+
+.down img{
+    width: 35px;
+}
