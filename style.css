@@ -158,10 +158,6 @@
     font-weight: 100;
 }
 
-.latestRecipes {
-
-}
-
 .latestRecipesTitle {
     font-size: 40px;
     padding-left: 100px;
@@ -170,7 +166,6 @@
 }
 
 .latestRecipesContent {
-    background-color: brown;
     display: flex;
     width: auto;
     text-align: center;
@@ -180,7 +175,6 @@
 }
 
 .latestRecipes article{
-    background-color: aqua;
     height: auto;
     width: 600px;
     display: flex;
@@ -226,18 +220,77 @@
 
 .latestRecipesContent .buttonDiv{
     display: flex;
-    background-color: blueviolet;
     height:auto;
     flex-direction: column;
     justify-content: end;
 }
 
 .latestRecipesContent button{
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
+    border-radius: 50px;
+    border-color: chocolate;
+    color: chocolate;
     overflow: hidden;
     width: 30%;
     height: 50px;
     margin-left: 5px;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.latestRecipesContent button:hover{
+    transform: scale(1.05);
+}
+
+.email{
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: chocolate;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.email .textDiv{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 40px;
+    width: 60%;
+}
+
+.email .textDiv h2{
+
+    font-size: 30px;
+}
+
+.email .formDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.email .formDiv input{
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    padding-left: 5px;
+    border: 0;
+}
+
+.email .formDiv input::placeholder{
+    color: white;
+}
+
+.email .formDiv button{
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
 }
