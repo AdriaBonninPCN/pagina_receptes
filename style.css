@@ -294,3 +294,78 @@
     border-color: transparent;
     color: white;
 }
+
+.popularRecipes{
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.popularRecipes h2{
+    padding: 30px;
+    padding-bottom: 0px;
+    font-size: 50px;
+}
+
+
+.popularRecipes .recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+.popularRecipes .recipe{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    margin: 30px;
+    justify-content: flex-end;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+.popularRecipes .recipe:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.popularRecipes .type{
+    color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.popularRecipes h3{
+    color: white;
+    padding: 20px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+
+#recipe1{
+    background-image: url(./Resources/udon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#recipe2{
+    background-image: url(./Resources/ramen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#recipe3{
+    background-image: url(./Resources/dorayaki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#recipe4{
+    background-image: url(./Resources/mochi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
