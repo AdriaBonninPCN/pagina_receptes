@@ -400,14 +400,14 @@
 }
 
 #recipe3 {
-    background-image: url(./Resources/dorayaki.jpg);
+    background-image: url(./Resources/mochi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
 
 #recipe4 {
-    background-image: url(./Resources/mochi.jpg);
+    background-image: url(./Resources/dorayaki.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
